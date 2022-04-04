@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Leia 4 notas, e faça a media dessas notas, se for maior que 7 'aprovado',
+// se maior ou igual a 5 e menor igual a 7, 'aprovado com recuperação', 
+//se menor que 5 'reprovado'.
+        let nota1 = Number(prompt("digite a primeira nota"))
+let nota2 = Number(prompt("digite a segunda nota"))
+let nota3 = Number(prompt("digite a terceira nota"))
+let nota4 = Number(prompt("digite a quarta nota"))
+let media = (nota1 + nota2 + nota3 + nota4)/4
+document.write(nota1 + "<br>")
+document.write(nota2 + "<br>")
+document.write(nota3 + "<br>")
+document.write(nota4 + "<br>")
+if(media>= 7){
+    document.write('Você foi Aprovado, Parabéns!!')
+}
+else if((media>=5) && (media< 7)){
+    document.write('Você foi Aprovado com Recuperação')
+}
+else{
+    document.write('Você foi Reprovado')
+}
+document.write("<br>")
+document.write("Sua média final é "+ media)
+
+
+    </script>
+</body>
+</html>
